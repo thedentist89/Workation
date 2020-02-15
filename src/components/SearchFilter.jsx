@@ -1,4 +1,6 @@
 import React from "react";
+import Checkbox from "./Checkbox";
+import RadioButton from "./RadioButton";
 
 const SearchFilter = () => {
   return (
@@ -52,103 +54,22 @@ const SearchFilter = () => {
         <span className="block text-gray-500 text-small font-semibold">
           Property Type
         </span>
-        <label className="mt-3 flex items-center">
-          <input
-            className="form-radio text-indigo-500"
-            type="radio"
-            name="propertyType"
-            value="house"
-          />
-          <span className="ml-2 text-white">House</span>
-        </label>
-        <label className="mt-3 flex items-center">
-          <input
-            className="form-radio text-indigo-500"
-            type="radio"
-            name="propertyType"
-            value="apartment"
-          />
-          <span className="ml-2 text-white">Apartment</span>
-        </label>
-        <label className="mt-3 flex items-center">
-          <input
-            className="form-radio text-indigo-500"
-            type="radio"
-            name="propertyType"
-            value="loft"
-          />
-          <span className="ml-2 text-white">Loft</span>
-        </label>
-        <label className="mt-3 flex items-center">
-          <input
-            className="form-radio text-indigo-500"
-            type="radio"
-            name="propertyType"
-            value="townhouse"
-          />
-          <span className="ml-2 text-white">Townhouse</span>
-        </label>
+        <RadioButton label="House" value="house" />
+        <RadioButton label="Apartment" value="apartement" />
+        <RadioButton label="Loft" value="loft" />
+        <RadioButton label="Townhouse" value="townhouse" />
       </fieldset>
       <fieldset className="px-4 py-4 border-t border-gray-900">
         <span className="block text-gray-500 text-small font-semibold">
           Amenities
         </span>
-        <label className="mt-3 flex items-center">
-          <input
-            className="form-checkbox text-indigo-500"
-            type="checkbox"
-            name="balcony"
-          />
-          <span className="ml-2 text-white">Balcony</span>
-        </label>
-        <label className="mt-3 flex items-center">
-          <input
-            className="form-checkbox text-indigo-500"
-            type="checkbox"
-            name="airConditioning"
-          />
-          <span className="ml-2 text-white">Air conditioning</span>
-        </label>
-        <label className="mt-3 flex items-center">
-          <input
-            className="form-checkbox text-indigo-500"
-            type="checkbox"
-            name="pool"
-          />
-          <span className="ml-2 text-white">Pool</span>
-        </label>
-        <label className="mt-3 flex items-center">
-          <input
-            className="form-checkbox text-indigo-500"
-            type="checkbox"
-            name="beach"
-          />
-          <span className="ml-2 text-white">Beach</span>
-        </label>
-        <label className="mt-3 flex items-center">
-          <input
-            className="form-checkbox text-indigo-500"
-            type="checkbox"
-            name="petFriendly"
-          />
-          <span className="ml-2 text-white">Pet friendly</span>
-        </label>
-        <label className="mt-3 flex items-center">
-          <input
-            className="form-checkbox text-indigo-500"
-            type="checkbox"
-            name="kidFriendly"
-          />
-          <span className="ml-2 text-white">Kid friendly</span>
-        </label>
-        <label className="mt-3 flex items-center">
-          <input
-            className="form-checkbox text-indigo-500"
-            type="checkbox"
-            name="parking"
-          />
-          <span className="ml-2 text-white">Parking</span>
-        </label>
+        <Checkbox name="balcony" label="Balcony" />
+        <Checkbox name="airConditioning" label="Air Conditioning" />
+        <Checkbox name="pool" label="Pool" />
+        <Checkbox name="beach" label="Beach" />
+        <Checkbox name="petFriendly" label="Pet Friendly" />
+        <Checkbox name="kidFriendly" label="Kid Friendly" />
+        <Checkbox name="parking" label="Parking" />
       </fieldset>
       <div className="bg-gray-900 px-4 py-4">
         <button
