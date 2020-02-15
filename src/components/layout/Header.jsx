@@ -1,15 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
+import { useShow } from "../../hooks";
 import Navigation from "./Navigation";
 import { ReactComponent as Burger } from "../../assets/burger.svg";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import { ReactComponent as Exit } from "../../assets/exit.svg";
 
 const Header = () => {
-  const [navIsShown, setNavIsShown] = useState(true);
-
-  function toggleNav() {
-    setNavIsShown(!navIsShown);
-  }
+  const { isShown, toggle } = useShow();
 
   return (
     <header className="bg-gray-900">
@@ -19,11 +16,11 @@ const Header = () => {
         </div>
         <div className="flex">
           <button
-            onClick={toggleNav}
+            onClick={toggle}
             type="button"
             className="px-2 text-gray-500 focus:outline-none"
           >
-            {navIsShown ? (
+            {isShown ? (
               <Exit className="h-6 w-6 fill-current" />
             ) : (
               <Burger className="h-6 w-6 fill-current" />
@@ -31,7 +28,7 @@ const Header = () => {
           </button>
         </div>
       </div>
-      {navIsShown && <Navigation />}
+      {isShown && <Navigation />}
     </header>
   );
 };
