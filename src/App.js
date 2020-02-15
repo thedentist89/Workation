@@ -6,7 +6,7 @@ import "./styles/index.css";
 
 function App() {
   return (
-    <div className="bg-gray-200 antialiased">
+    <div className="min-h-screen bg-gray-200 antialiased">
       <Header />
       <Sidebar />
       <Main />
