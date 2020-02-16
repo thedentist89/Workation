@@ -1,6 +1,10 @@
 module.exports = {
   theme: {
-    extend: {},
+    extend: {
+      padding: {
+        "5/6": "83.333333%"
+      }
+    },
     customForms: theme => ({
       default: {
         select: {

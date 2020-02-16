@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export const useShow = () => {
-  const [isShown, setIsShown] = useState(false);
+  const [isShown, setIsShown] = useState(true);
 
   function toggle() {
     setIsShown(!isShown);

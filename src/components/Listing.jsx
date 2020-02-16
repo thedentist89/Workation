@@ -3,10 +3,10 @@ import { ReactComponent as Star } from "../assets/star.svg";
 
 const Listing = () => {
   return (
-    <div>
-      <div className="mt-6">
+    <div className="mt-6">
+      <div className="relative pb-5/6">
         <img
-          className="rounded-lg shadow-md h-64"
+          className="absolute inset-0 h-full object-cover rounded-lg shadow-md h-64"
           src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
           alt="Villa"
         />

@@ -9,8 +9,8 @@ const Header = () => {
   const { isShown, toggle } = useShow();
 
   return (
-    <header className="bg-gray-900">
-      <div className="flex justify-between items-center px-4 py-3">
+    <header className="bg-gray-900 sm:flex sm:items-center sm:justify-between">
+      <div className="flex justify-between px-4 py-3">
         <div>
           <Logo className="h-8 w-auto" />
         </div>
@@ -18,17 +18,17 @@ const Header = () => {
           <button
             onClick={toggle}
             type="button"
-            className="px-2 text-gray-500 focus:outline-none"
+            className="px-2 text-gray-500 focus:outline-none sm:hidden"
           >
             {isShown ? (
-              <Exit className="h-6 w-6 fill-current" />
-            ) : (
               <Burger className="h-6 w-6 fill-current" />
+            ) : (
+              <Exit className="h-6 w-6 fill-current" />
             )}
           </button>
         </div>
       </div>
-      {isShown && <Navigation />}
+      <Navigation isShown={isShown} />
     </header>
   );
 };

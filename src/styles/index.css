@@ -795,7 +795,6 @@ video {
   border-width: 1px;
   border-radius: 0.25rem;
   border: transparent;
-  checked-color: #667eea;
 }
 
 .form-checkbox:checked {
@@ -870,6 +869,20 @@ video {
   outline: none;
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
   border-color: #63b3ed;
+}
+
+.aspect-6x5 {
+  position: relative;
+  padding-bottom: 83.333333%;
+}
+
+.aspect-6x5 > * {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
 }
 
 .sr-only {
@@ -5755,6 +5768,10 @@ video {
   padding: 1px;
 }
 
+.p-5\/6 {
+  padding: 83.333333%;
+}
+
 .py-0 {
   padding-top: 0;
   padding-bottom: 0;
@@ -5943,6 +5960,16 @@ video {
 .px-px {
   padding-left: 1px;
   padding-right: 1px;
+}
+
+.py-5\/6 {
+  padding-top: 83.333333%;
+  padding-bottom: 83.333333%;
+}
+
+.px-5\/6 {
+  padding-left: 83.333333%;
+  padding-right: 83.333333%;
 }
 
 .pt-0 {
@@ -6247,6 +6274,22 @@ video {
 
 .pl-px {
   padding-left: 1px;
+}
+
+.pt-5\/6 {
+  padding-top: 83.333333%;
+}
+
+.pr-5\/6 {
+  padding-right: 83.333333%;
+}
+
+.pb-5\/6 {
+  padding-bottom: 83.333333%;
+}
+
+.pl-5\/6 {
+  padding-left: 83.333333%;
 }
 
 .placeholder-transparent::-webkit-input-placeholder {
@@ -18396,6 +18439,10 @@ video {
     padding: 1px;
   }
 
+  .sm\:p-5\/6 {
+    padding: 83.333333%;
+  }
+
   .sm\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -18584,6 +18631,16 @@ video {
   .sm\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .sm\:py-5\/6 {
+    padding-top: 83.333333%;
+    padding-bottom: 83.333333%;
+  }
+
+  .sm\:px-5\/6 {
+    padding-left: 83.333333%;
+    padding-right: 83.333333%;
   }
 
   .sm\:pt-0 {
@@ -18888,6 +18945,22 @@ video {
 
   .sm\:pl-px {
     padding-left: 1px;
+  }
+
+  .sm\:pt-5\/6 {
+    padding-top: 83.333333%;
+  }
+
+  .sm\:pr-5\/6 {
+    padding-right: 83.333333%;
+  }
+
+  .sm\:pb-5\/6 {
+    padding-bottom: 83.333333%;
+  }
+
+  .sm\:pl-5\/6 {
+    padding-left: 83.333333%;
   }
 
   .sm\:placeholder-transparent::-webkit-input-placeholder {
@@ -31038,6 +31111,10 @@ video {
     padding: 1px;
   }
 
+  .md\:p-5\/6 {
+    padding: 83.333333%;
+  }
+
   .md\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -31226,6 +31303,16 @@ video {
   .md\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .md\:py-5\/6 {
+    padding-top: 83.333333%;
+    padding-bottom: 83.333333%;
+  }
+
+  .md\:px-5\/6 {
+    padding-left: 83.333333%;
+    padding-right: 83.333333%;
   }
 
   .md\:pt-0 {
@@ -31530,6 +31617,22 @@ video {
 
   .md\:pl-px {
     padding-left: 1px;
+  }
+
+  .md\:pt-5\/6 {
+    padding-top: 83.333333%;
+  }
+
+  .md\:pr-5\/6 {
+    padding-right: 83.333333%;
+  }
+
+  .md\:pb-5\/6 {
+    padding-bottom: 83.333333%;
+  }
+
+  .md\:pl-5\/6 {
+    padding-left: 83.333333%;
   }
 
   .md\:placeholder-transparent::-webkit-input-placeholder {
@@ -43680,6 +43783,10 @@ video {
     padding: 1px;
   }
 
+  .lg\:p-5\/6 {
+    padding: 83.333333%;
+  }
+
   .lg\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -43868,6 +43975,16 @@ video {
   .lg\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .lg\:py-5\/6 {
+    padding-top: 83.333333%;
+    padding-bottom: 83.333333%;
+  }
+
+  .lg\:px-5\/6 {
+    padding-left: 83.333333%;
+    padding-right: 83.333333%;
   }
 
   .lg\:pt-0 {
@@ -44172,6 +44289,22 @@ video {
 
   .lg\:pl-px {
     padding-left: 1px;
+  }
+
+  .lg\:pt-5\/6 {
+    padding-top: 83.333333%;
+  }
+
+  .lg\:pr-5\/6 {
+    padding-right: 83.333333%;
+  }
+
+  .lg\:pb-5\/6 {
+    padding-bottom: 83.333333%;
+  }
+
+  .lg\:pl-5\/6 {
+    padding-left: 83.333333%;
   }
 
   .lg\:placeholder-transparent::-webkit-input-placeholder {
@@ -56322,6 +56455,10 @@ video {
     padding: 1px;
   }
 
+  .xl\:p-5\/6 {
+    padding: 83.333333%;
+  }
+
   .xl\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -56510,6 +56647,16 @@ video {
   .xl\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .xl\:py-5\/6 {
+    padding-top: 83.333333%;
+    padding-bottom: 83.333333%;
+  }
+
+  .xl\:px-5\/6 {
+    padding-left: 83.333333%;
+    padding-right: 83.333333%;
   }
 
   .xl\:pt-0 {
@@ -56814,6 +56961,22 @@ video {
 
   .xl\:pl-px {
     padding-left: 1px;
+  }
+
+  .xl\:pt-5\/6 {
+    padding-top: 83.333333%;
+  }
+
+  .xl\:pr-5\/6 {
+    padding-right: 83.333333%;
+  }
+
+  .xl\:pb-5\/6 {
+    padding-bottom: 83.333333%;
+  }
+
+  .xl\:pl-5\/6 {
+    padding-left: 83.333333%;
   }
 
   .xl\:placeholder-transparent::-webkit-input-placeholder {

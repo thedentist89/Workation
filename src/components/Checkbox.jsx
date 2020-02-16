@@ -2,7 +2,7 @@ import React from "react";
 
 const Checkbox = ({ label, name }) => {
   return (
-    <label className="mt-3 flex items-center">
+    <label className="mt-3 flex items-center sm:w-1/4 sm:px-2">
       <input
         className="form-checkbox text-indigo-500"
         type="checkbox"
