@@ -8,8 +8,8 @@ const SideBar = () => {
   const { isShown, toggle } = useShow();
 
   return (
-    <section className="bg-gray-800 ">
-      <div className="px-4 py-3 flex justify-between">
+    <section className="bg-gray-800">
+      <div className="px-4 py-3 flex justify-between xl:hidden">
         <div className="relative w-full max-w-xs">
           <div className="absolute inset-y-0 left-0 flex items-center pl-2">
             <Search className="h-5 w-5 fill-current text-gray-600" />
@@ -27,7 +27,7 @@ const SideBar = () => {
           <span className="text-white font-medium">Filters</span>
         </button>
       </div>
-      {isShown && <SearchFilter />}
+      <SearchFilter isShown={isShown} />
     </section>
   );
 };

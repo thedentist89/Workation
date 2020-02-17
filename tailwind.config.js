@@ -3,6 +3,10 @@ module.exports = {
     extend: {
       padding: {
         "5/6": "83.333333%"
+      },
+      spacing: {
+        "72": "18rem",
+        "80": "20rem"
       }
     },
     customForms: theme => ({

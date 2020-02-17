@@ -6,10 +6,12 @@ import "./styles/index.css";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-200 antialiased">
+    <div className="min-h-screen bg-gray-200 antialiased xl:flex xl:flex-col xl:h-screen">
       <Header />
-      <Sidebar />
-      <Main />
+      <div className="xl:flex xl:flex-1 xl:overflow-y-hidden">
+        <Sidebar />
+        <Main />
+      </div>
     </div>
   );
 }

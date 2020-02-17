@@ -2,11 +2,15 @@ import React from "react";
 import Checkbox from "./Checkbox";
 import RadioButton from "./RadioButton";
 
-const SearchFilter = () => {
+const SearchFilter = ({ isShown }) => {
   return (
-    <form>
-      <div className="lg:flex">
-        <div className="px-4 py-4 border-t border-gray-900 sm:flex lg:block lg:w-2/3 lg:border-r lg:border-gray-900">
+    <form className="xl:flex xl:flex-col xl:justify-between xl:h-full xl:w-72">
+      <div
+        className={`${
+          isShown ? "lg:flex" : "hidden"
+        } xl:flex-col xl:flex xl:overflow-y-auto`}
+      >
+        <div className="px-4 py-4 border-t border-gray-900 sm:flex lg:block lg:w-2/3 lg:border-r lg:border-gray-900 xl:border-0 xl:w-full">
           <div className="flex -mx-2 sm:w-1/2 sm:mx-0 lg:w-full">
             <div className="w-1/2 px-2">
               <label
@@ -51,7 +55,7 @@ const SearchFilter = () => {
             </select>
           </div>
         </div>
-        <div className="px-4 py-4 border-t border-gray-900 lg:w-2/3 lg:border-r lg:border-gray-900">
+        <div className="px-4 py-4 border-t border-gray-900 lg:w-2/3 lg:border-r lg:border-gray-900 xl:border-t xl:border-r-0 xl:border-gray-900 xl:w-full">
           <span className="block text-gray-500 text-small font-semibold">
             Property Type
           </span>
@@ -66,7 +70,7 @@ const SearchFilter = () => {
           <span className="block text-gray-500 text-small font-semibold">
             Amenities
           </span>
-          <div className="sm:flex sm:-mx-2 sm:flex-wrap">
+          <div className="sm:flex sm:-mx-2 sm:flex-wrap xl:flex-col">
             <Checkbox name="balcony" label="Balcony" />
             <Checkbox name="airConditioning" label="AC" />
             <Checkbox name="pool" label="Pool" />
@@ -80,7 +84,7 @@ const SearchFilter = () => {
       <div className="bg-gray-900 px-4 py-4 sm:text-right">
         <button
           type="button"
-          className="sm:w-auto sm:inline-block block w-full bg-indigo-500 hover:bg-indigo-400 font-semibold text-white px-4 py-2 rounded-lg"
+          className="sm:w-auto sm:inline-block block w-full bg-indigo-500 hover:bg-indigo-400 font-semibold text-white px-4 py-2 rounded-lg xl:w-full"
         >
           Update results
         </button>
