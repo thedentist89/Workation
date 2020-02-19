@@ -10,12 +10,7 @@ const Main = () => {
           Live like the stars in these luxurious Southern Califorrnia estates.
         </p>
       </div>
-      <div className="sm:flex sm:overflow-x-scroll pb-8 sm:px-4">
-        <Listings />
-        <Listings />
-        <Listings />
-        <Listings />
-      </div>
+      <Listings />
     </main>
   );
 };
