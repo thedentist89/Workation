@@ -877,10 +877,6 @@ video {
   width: 5px;
 }
 
-::-webkit-scrollbar:hover {
-  width: 10px;
-}
-
 /* Track */
 
 ::-webkit-scrollbar-track {
@@ -899,7 +895,6 @@ video {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #474747;
-  width: 10px;
 }
 
 .sr-only {
