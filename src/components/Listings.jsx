@@ -27,7 +27,7 @@ const Listings = () => {
       beds: 4,
       baths: 6,
       title: "Mini mansion",
-      rent: 2600,
+      rent: 1800,
       stars: 5,
       reviews: 238,
       imgUrl:
