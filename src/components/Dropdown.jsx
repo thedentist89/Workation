@@ -22,9 +22,9 @@ const Dropdown = () => {
         <button
           type="button"
           onClick={toggle}
-          className="sm:fixed sm:opacity-0 sm:inset-0 sm:cursor-default sm:h-full sm:w-full hidden sm:block"
+          className="sm:fixed sm:opacity-0 sm:inset-0 sm:cursor-default sm:h-full sm:w-full hidden sm:block sm:z-30"
         ></button>
-        <div className="mt-4 sm:mr-4 sm:mt-3 sm:bg-white sm:rounded-lg sm:absolute sm:right-0 sm:w-48 sm:shadow-xl sm:py-2">
+        <div className="mt-4 sm:mr-4 sm:mt-3 sm:bg-white sm:rounded-lg sm:absolute sm:right-0 sm:w-48 sm:shadow-xl sm:py-2 sm:z-40 xl:border">
           <a
             href="/#"
             className="text-gray-400 hover:text-white font-semibold block sm:text-gray-800 sm:px-4 sm:m-0 sm:py-2 hover:bg-indigo-500 hover:text-white"
